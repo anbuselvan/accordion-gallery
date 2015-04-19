@@ -20,7 +20,7 @@ Basically, you are allowed to use Accordion CJ in any way you like, in both free
 
 Check the documentation [here](http://www.cssjquery.com/accordion.php#publish).
 
-The integration is very simple. Create the accordion object and pass the gallery images path in the parameter.
+The integration is very simple. Create an accordion object and set the gallery images path in the parameter.
 
 ```js
   Template.accordion.rendered = function() {
@@ -38,3 +38,4 @@ Please keep all the gallery images in **/public/accordion** folder.
 ### Sample App
 
 Check the simple-app project from **examples/simple-app** folder.
+
