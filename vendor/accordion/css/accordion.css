@@ -1,0 +1,217 @@
+
+#accordion * {
+	box-sizing: border-box;
+}
+#accordion {
+	max-width: 1200px;
+  	margin: 0 auto;
+  	position: relative;
+}
+#accdiv {
+	height: 360px;
+	overflow: hidden;
+	
+	}
+#accul {
+	width: 5000px;
+	margin: 0;
+	padding: 0;
+}
+#accul.hover .accli,
+#accul:hover .accli {
+	width: 100px;
+}
+#accordion .accli {
+	display: inline;
+	float: left;
+	width: 198.33333333333334px;
+	height: 360px;
+	-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	box-shadow: -10px 0 15px 0 rgba(0,0,0,0.2);
+	border-left: 2px solid rgba(255, 255, 255, 0.5);
+	position: relative;
+	box-sizing: content-box;
+}
+#accordion .accli.hover,
+#accordion .accli:hover {
+	width: 690px;
+	cursor: pointer;
+}
+#accordion .accli:first-child {
+	border-left: none;
+}
+#accordion .imgdiv {
+	overflow: hidden;
+	width: 692px;
+}
+/* CENTERED IMAGE EFFECT */
+#accul.hover .accli .imgwrap,
+#accul:hover .accli .imgwrap {
+	left: -295px;
+}
+#accordion .accli .imgwrap {
+	position: relative;
+	left: -245px;
+	-webkit-transition: all 0.7s ease;
+	        transition: all 0.7s ease;
+}
+#accordion .accli.hover .imgwrap,
+#accordion .accli:hover .imgwrap {
+	left: 0;
+}
+
+
+/* SHORT TEXT */
+#accordion .short {
+	position: absolute;
+	top:340px;
+	left: 20px;
+	width: 360px;
+	-webkit-transform: rotate(-90deg);
+	    	  -ms-transform: rotate(-90deg);
+	    		  transform: rotate(-90deg);
+	-webkit-transform-origin: left top;
+	    -ms-transform-origin: left top;
+	        transform-origin: left top;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease-in;
+	        transition: all 0.3s ease-in;
+}
+#accordion .short p {margin:0;}
+#accordion .short p span {
+	background: rgba(0, 0, 0, 0.38);
+	color: #ffffff;
+	font-weight: lighter;
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	padding: 5px 10px;
+	text-shadow: 2px 2px 2px #000000, -2px -2px 2px #000000, -2px 2px 2px #000000, 2px -2px 2px #000000;
+}
+
+#accordion .accli.hover .short,
+#accordion .accli:hover .short {
+	opacity: 0;
+}
+
+/* LONG TEXT */
+#accordion .text {
+	position: absolute;
+	top: 0;
+	width: 690px;
+	padding: 0 20px;
+	text-align: left;
+}
+#accordion .text p {
+	position: relative;
+	opacity: 0;
+	top: 0px;
+	-webkit-transition: all 0.7s ease;
+	        transition: all 0.7s ease;
+	margin: 0;
+}
+#accordion .accli.hover .text p,
+#accordion .accli:hover .text p {
+	opacity: 1;
+	top: 20px;
+}
+#accordion .text p span {
+	display: none;
+	background: rgba(124, 57, 57, 0.52);
+	color: #ffffff;
+	font-weight: lighter;
+	font-family: Open Sans, Helvetica, Arial, sans-serif;
+	font-size: 27px;
+  	padding: 5px 10px;
+  	-webkit-transform: scale(1,1);
+  	    -ms-transform: scale(1,1);
+  	        transform: scale(1,1);
+	margin-bottom: 12px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), -1px 1px 1px rgba(0, 0, 0, 0.2), 1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+#accordion .text p:last-child span {
+	margin-bottom: 0;
+}
+#accordion .accli.hover .text p span,
+#accordion .accli:hover .text p span {
+	display: inline-block;
+}
+#accordion .text p:nth-child(1) {	-webkit-transition-delay: 0.3s;	transition-delay: 0.3s; }
+#accordion .text p:nth-child(2) {	-webkit-transition-delay: 0.5s;	transition-delay: 0.5s; }
+#accordion .text p:nth-child(3) {	-webkit-transition-delay: 0.7s;	transition-delay: 0.7s; }
+#accordion .text p:nth-child(4) {	-webkit-transition-delay: 0.9000000000000001s;	transition-delay: 0.9000000000000001s; }
+
+#accordion .accli:hover .text p, #accordion .accli.hover .text p,
+#accordion .accli:hover .top-left p, #accordion .accli.hover .top-left p {	top: 20px; }
+#accordion .accli:hover .top-right p, #accordion .accli.hover .top-right p {	top: 20px; }
+#accordion .accli:hover .bottom-left p, #accordion .accli.hover .bottom-left p {	top: -20px; }
+#accordion .accli:hover .bottom-right p, #accordion .accli.hover .bottom-right p {	top: -20px; }
+
+#accordion .accli .bottom-right { bottom: 0; top: auto; text-align: right; }
+#accordion .accli .bottom-left { bottom: 0; top: auto; text-align: left; }
+#accordion .accli .top-right { top: 0; bottom: auto; text-align: right; }
+#accordion .accli .top-left { top: 0; bottom: auto; text-align: left; }
+
+/* KEN BURNS EFFECT */
+#accordion .accli.hover img,
+#accordion .accli:hover img {
+	-webkit-transition: all 5s ease-in-out;
+	        transition: all 5s ease-in-out;
+	-webkit-transform: scale(1.07);
+	    -ms-transform: scale(1.07);
+	        transform: scale(1.07);
+}
+#accordion .accli img {
+	-webkit-transition: all 0.7s ease-out;
+	        transition: all 0.7s ease-out;
+	-webkit-transform-origin: 20% 20%;
+	    -ms-transform-origin: 20% 20%;
+	        transform-origin: 20% 20%;
+	overflow: hidden;
+}
+#accordion .accli:nth-child(2n) img {-webkit-transform-origin: 80% 80%;-ms-transform-origin: 80% 80%;transform-origin: 80% 80%;}
+#accordion .accli:nth-child(3n) img {-webkit-transform-origin: 20% 80%;-ms-transform-origin: 20% 80%;transform-origin: 20% 80%;}
+#accordion .accli:nth-child(5n) img {-webkit-transform-origin: 80% 20%;-ms-transform-origin: 80% 20%;transform-origin: 80% 20%;}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+#accordion .Lightbox {
+	display: block;
+}
+
+.Preloader {
+	/*none - autoplay:false ; block - autoplay:true*/
+	display: none;
+}
+		
+		.Controller { z-index: 10000; position: absolute; top:0; margin-top: 380px; }
+		#relativediv { position: relative; z-index:9998; }
+		.Controller img { margin-right: 3px; position: relative; opacity: .6; cursor: pointer; }
+		.Controller img:hover { opacity: 1; }
+		#prev {-webkit-transform: scaleX(-1); transform: scaleX(-1);}
+		
+		#play { position: relative; }
+		#pause-span { visibility: hidden; position: relative; }
+		#pause { position: absolute; right: 100%; }
+		.Preloader {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			left: -32px;
+			top: 0px;
+			background-color: #aaa;
+			border: 3px solid #333;
+			-webkit-border-radius: 100%;
+			border-radius: 100%;
+			z-index: 9998;
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: -webkit-transform 5s ease-in-out,
+						opacity 5s ease-in-out;
+			transition: transform 5s ease-in-out,
+						opacity 5s ease-in-out;
+		}
+		.modified { opacity: 1; -webkit-transform: scale(0); transform: scale(0); }.Controller{right: 0;left: auto;} #relativediv {left:auto;}

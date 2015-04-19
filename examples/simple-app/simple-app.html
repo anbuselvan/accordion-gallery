@@ -1,0 +1,84 @@
+<head>
+  <title>simple-app</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> carousel}}
+</body>
+
+<template name="carousel">
+  <div id="accordion">
+    <div id="accdiv">
+      <ul id="accul">
+        <li class="accli">
+          <a href="http://www.example.com" target="_blank">
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/01.jpg" alt=""></div></div>
+            <div class="short"><p><span>First slide</span></p></div>
+            <div class="text bottom-right">
+              <p><span>This is a new CSS jQuery Accordion</span></p>
+              <p><span>Install it for FREE on your website</span></p>
+              <p><span>In 3 easy steps</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li class="accli">
+          <a href="accordion/img/02.jpg" data-gallery="gallery" data-cap="lightbox caption 02">
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/02.jpg" alt=""></div></div>
+            <div class="short"><p><span>Second slide</span></p></div>
+            <div class="text top-left">
+              <p><span>Customize this Accordion on the panel below</span></p>
+              <p><span style="background: rgba(57, 108, 124, 0.52);">Over 50 properties to choose from</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li class="accli">
+          <a>
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/03.jpg" alt=""></div></div>
+            <div class="short"><p><span>Third slide</span></p></div>
+            <div class="text top-right">
+              <p class=""><span>Upload your images and write the text</span></p>
+              <p class=""><span>Using the Images tab below</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li class="accli">
+          <a>
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/04.jpg" alt=""></div></div>
+            <div class="short"><p><span>Fourth slide</span></p></div>
+            <div class="text bottom-left">
+              <p><span style="background:rgba(44, 128, 128, 0.54)">The Accordion is Responsive</span></p>
+              <p><span style="background:rgba(44, 128, 128, 0.54)">Resize the browser's window to see</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li class="accli">
+          <a>
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/05.jpg" alt=""></div></div>
+            <div class="short"><p><span>Fifth slide</span></p></div>
+            <div class="text bottom-right">
+              <p><span>Works great on mobile devices</span></p>
+            </div>
+          </a>
+        </li>
+
+        <li class="accli">
+          <a>
+            <div class="imgdiv"><div class="imgwrap"><img src="accordion/img/06.jpg" alt=""></div></div>
+            <div class="short"><p><span>Sixth slide</span></p></div>
+            <div class="text bottom-right">
+              <p><span>Lightweight</span></p>
+              <p><span>Using mostly browser's built in CSS capabilities</span></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="Controller"></div>
+  </div>
+</template>
