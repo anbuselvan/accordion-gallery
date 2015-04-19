@@ -16,6 +16,21 @@ Basically, you are allowed to use Accordion CJ in any way you like, in both free
 
     meteor add anbuselvan:accordion-gallery
 
+### Integration
+
+Check the documentation [here](http://www.cssjquery.com/accordion.php#publish).
+
+The integration is very simple. Create the accordion object and pass the gallery images path in the parameter.
+
+```js
+  Template.accordion.rendered = function() {
+    //Create Accordion
+    $accordion = $("#accordion").accordion({"path":"accordion/"});
+    //Autoplay
+    $('#play').click();
+  };
+```
+
 ### Gallery Assets
 
 Please keep all the gallery images in **/public/accordion** folder.
