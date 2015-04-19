@@ -19,3 +19,7 @@ Basically, you are allowed to use Accordion CJ in any way you like, in both free
 ### Gallery Assets
 
 Please keep all the gallery images in **/public/accordion** folder.
+
+### Sample App
+
+Check the simple-app project from **examples/simple-app** folder.
