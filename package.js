@@ -1,6 +1,6 @@
 Package.describe({
   name: 'anbuselvan:accordion-gallery',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: 'Accorion image gallery',
   // URL to the Git repository containing the source code for this package.
@@ -19,7 +19,6 @@ Package.onUse(function(api) {
     'vendor/accordion/css/accordion.css',
     'vendor/accordion/js/accordion.min.js',
     'vendor/accordion/lightbox/jquery.fs.boxer.min.css',
-    'vendor/accordion/lightbox/jquery.fs.boxer.min.js',
-    'vendor/accordion/lib/overrides.css'
+    'vendor/accordion/lightbox/jquery.fs.boxer.min.js'
   ], "client");
 });
