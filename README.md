@@ -23,7 +23,7 @@ Check the documentation [here](http://www.cssjquery.com/accordion.php#publish).
 The integration is very simple. Create an accordion object and set the gallery images path in the parameter.
 
 ```js
-  Template.accordion.rendered = function() {
+  Template.carousel.rendered = function() {
     //Create Accordion
     $accordion = $("#accordion").accordion({"path":"accordion/"});
     //Autoplay
@@ -37,6 +37,7 @@ Please keep all the gallery images in **/public/accordion** folder.
 
 Also copy and paste the **img** folder that contains **controller** images, from **/examples/simple-app/public/accordion/img** into your projects **/public/accordion/** folder, and the final structure will be:
 
+```
 your-app
 ├── public
 │   └── accordion
@@ -51,6 +52,7 @@ your-app
 │               ├── next.png
 │               ├── pause.png
 │               └── play.png
+```
 
 ### Sample App
 
