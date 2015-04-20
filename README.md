@@ -35,6 +35,23 @@ The integration is very simple. Create an accordion object and set the gallery i
 
 Please keep all the gallery images in **/public/accordion** folder.
 
+Also copy and paste the **img** folder that contains **controller** images, from **/examples/simple-app/public/accordion/img** into your projects **/public/accordion/** folder, and the final structure will be:
+
+your-app
+├── public
+│   └── accordion
+│       ├── 01.jpg
+│       ├── 02.jpg
+│       ├── 03.jpg
+│       ├── 04.jpg
+│       ├── 05.jpg
+│       ├── 06.jpg
+│       └── img
+│           └── controller
+│               ├── next.png
+│               ├── pause.png
+│               └── play.png
+
 ### Sample App
 
 Check the simple-app project from **examples/simple-app** folder.
