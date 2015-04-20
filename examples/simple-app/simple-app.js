@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
 
-  Template.accordion.rendered = function() {
+  Template.carousel.rendered = function() {
     //Create Accordion
     $accordion = $("#accordion").accordion({"path":"accordion/"});
     //Autoplay
