@@ -35,7 +35,7 @@ The integration is very simple. Create an accordion object and set the gallery i
 
 Please keep all the gallery images in **/public/accordion** folder.
 
-Also copy and paste the **img** folder that contains **controller** images, from **/examples/simple-app/public/accordion/img** into your projects **/public/accordion/** folder, and the final structure will be:
+Also copy and paste the **img** folder that contains **controller** images, from **/examples/accordion-gallery/public/accordion/img** into your projects **/public/accordion/** folder, and the final structure will be:
 
 ```
 your-app
@@ -56,5 +56,8 @@ your-app
 
 ### Sample App
 
-Check the simple-app project from **examples/simple-app** folder.
+Check the accordion-gallery project from **examples/accordion-gallery** folder.
 
+### See it in action
+
+[Meteor - Accordion Gallery](http://accordion-gallery.meteor.com)
