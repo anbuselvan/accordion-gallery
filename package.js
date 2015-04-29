@@ -1,8 +1,8 @@
 Package.describe({
   name: 'anbuselvan:accordion-gallery',
-  version: '0.0.7',
+  version: '0.0.8',
   // Brief, one-line summary of the package.
-  summary: 'Accorion image gallery',
+  summary: 'Accordion image gallery',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/anbuselvan/accordion-gallery.git',
   // By default, Meteor will default to using README.md for documentation.
