@@ -56,7 +56,11 @@ your-app
 
 ### Sample App
 
-Check the accordion-gallery project from **examples/accordion-gallery** folder.
+Please check out the [accordion-gallery](https://github.com/anbuselvan/accordion-gallery/tree/master/examples/accordion-gallery) project inside the [examples](https://github.com/anbuselvan/accordion-gallery/tree/master/examples) folder.
+
+### Quick preview
+
+![Screen Capture](https://raw.githubusercontent.com/anbuselvan/accordion-gallery/master/screenshot/accordion-gallery.jpg)
 
 ### See it in action
 
